@@ -4,6 +4,7 @@ import moneroTs from "monero-ts";
 window.monero = moneroTs;
 
 main();
+
 async function main() {
   let walletKeys = await moneroTs.createWalletKeys({
     networkType: moneroTs.MoneroNetworkType.MAINNET,
@@ -19,5 +20,3 @@ async function main() {
   document.getElementById("wallet_view_key")!.innerHTML =
     "View key: " + (await walletKeys.getPrivateViewKey());
 }
-
-export default { main };
