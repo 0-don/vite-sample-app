@@ -1,5 +1,5 @@
 {
-  "name": "xmr-vite-sample-app",
+  "name": "vite-sample-app",
   "private": true,
   "scripts": {
     "build": "vite build && vite preview"
